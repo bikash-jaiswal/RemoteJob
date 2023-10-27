@@ -1,13 +1,17 @@
 import React from 'react';
 import MainMenu from './MainMenu';
+import DiscriprionContainer from './Summary';
 
+DiscriprionContainer
 const HomePage = () => {
   return (
     <div className="home-page">
       <header>
         <MainMenu/>
+        <DiscriprionContainer/>
         <h1>Welcome to My Website</h1>
       </header>
+      
       <main>
         <section>
           <h2>About Me</h2>
