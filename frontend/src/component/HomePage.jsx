@@ -4,6 +4,9 @@ import DiscriprionContainer from './Summary';
 import JobList from './JobsPlatorm';
 import Footer from './Layout/Footer';
 import Disclaimer from './Layout/Disclamier';
+import CompanyFrontPage from './Layout/LandingPage';
+
+
 const jobsData = {
   "jobPlatforms": [
     {
@@ -131,11 +134,11 @@ const HomePage = () => {
       <Disclaimer />
       <header>
         <MainMenu/>
-        <h1>Your remote jobs search starts here...</h1>
       </header>
      
       <main>
-      <DiscriprionContainer/>
+      {/* <DiscriprionContainer/> */}
+      <CompanyFrontPage/>
       <JobList jobPlatforms={jobsData.jobPlatforms} />
       </main>
       <Footer />

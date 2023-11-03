@@ -5,7 +5,7 @@ import Avatar from '@mui/material/Avatar';
 import Container from '@mui/material/Container';
 import SearchIcon from '@mui/icons-material/Search';
 import { IconButton, Link } from '@mui/material';
-Link
+
 const MainMenu = () => {
   return (
     <Container fixed disableGutters>
