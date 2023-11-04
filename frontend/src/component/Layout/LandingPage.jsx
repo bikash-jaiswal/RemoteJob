@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Typography, Paper, Card, Box } from '@mui/material';
+import workFromHomeImage from '../../assets/work_from_home.jpg';
 
 const CompanyFrontPage = () => {
     return (
@@ -43,8 +44,7 @@ const CompanyFrontPage = () => {
                 }}
             >
                 <img
-                    src="src\assets\work_from_home.jpg"
-                    alt="Your Image"
+                    src={workFromHomeImage} alt="Work From Home" 
                     style={{ maxWidth: '100%', maxHeight: '100%' }}
                 />
             </Grid>
