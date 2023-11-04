@@ -6,7 +6,7 @@ const CompanyFrontPage = () => {
         <Box
             sx={{
                 width: '100%',
-                height: '50vh',
+                height: '100%',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -15,8 +15,8 @@ const CompanyFrontPage = () => {
         >
             <Grid container item xs={10} md={6}
                 sx={{
-                    width: '100%',
-                    height: '100%',
+                    width: '100vh',
+                    height: '100vh',
                     justifyContent: 'center',
                     alignItems: 'center',
                     textAlign: 'center',
@@ -35,8 +35,8 @@ const CompanyFrontPage = () => {
                 item
                 xs={12}
                 sx={{
-                    width: '100%',
-                    height: '100%',
+                    width: '100vh',
+                    height: '100vh',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
