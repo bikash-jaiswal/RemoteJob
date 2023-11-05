@@ -4,8 +4,8 @@ import { Card, CardContent, Typography, Stack } from '@mui/material';
 const JobList = ({ jobPlatforms }) => {
     return (
         <div>
-            <h1>Search Remote jobs on below platforms</h1>
             <Stack spacing={3} padding={3}>
+            <h1>Search Remote jobs on below platforms</h1>
                 {jobPlatforms.map((platform, index) => (
                     <Card key={index}>
                         <CardContent>
