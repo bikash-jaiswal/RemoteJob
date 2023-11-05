@@ -1,9 +1,6 @@
 import React from 'react';
-import MainMenu from './MainMenu';
-import DiscriprionContainer from './Summary';
-import JobList from './JobsPlatorm';
-import Footer from './Layout/Footer';
-import Disclaimer from './Layout/Disclamier';
+import JobList from './JobsPlatorm'
+
 import CompanyFrontPage from './Layout/LandingPage';
 
 
@@ -128,22 +125,14 @@ const jobsData = {
 };
 
 
-const HomePage = () => {
+const HomePage = ({ match }) => {
   return (
-    <div className="home-page">
-      <Disclaimer />
-      <header>
-        <MainMenu/>
-      </header>
-     
-      <main>
-      {/* <DiscriprionContainer/> */}
-      <CompanyFrontPage/>
-      <JobList jobPlatforms={jobsData.jobPlatforms} />
-      </main>
-      <Footer />
+    <div className='Home'>
+        <CompanyFrontPage />
+        <JobList jobPlatforms={jobsData.jobPlatforms} />
     </div>
   );
 };
+
 
 export default HomePage;

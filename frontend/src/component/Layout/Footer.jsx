@@ -3,7 +3,7 @@ import { Box, Container, Grid, Link, Typography } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box bgcolor="grey.200" py={3}>
+    <Box bgcolor="grey.100" py={3} style={{ marginTop: 'auto' }}>
       <Container>
         <Typography variant="body2" align="center" color="textPrimary">
           &copy; 2023 Remote Job Platform. All rights reserved.

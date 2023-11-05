@@ -1,16 +1,26 @@
 import { useState } from 'react'
-HomePage
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 import HomePage from './component/HomePage'
-import Container from '@mui/material/Container';
+import Category from './component/Category'
+import MainMenu from './component/MainMenu';
+import Footer from './component/Layout/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Container fixed disableGutters>
-      <HomePage />
-      </Container>
+      <Router>
+        <header>
+          <MainMenu />
+        </header>
+        <Routes>
+          {/* <Route path="/notes" element={<Notes />} /> */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/category" element={<Category />} />
+        </Routes>
+        <Footer /> 
+    </Router>
   )
 }
 
